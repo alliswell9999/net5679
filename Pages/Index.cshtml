@@ -1,0 +1,103 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "MyShop - Home";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.hero {
+    background: linear-gradient(to right,#4facfe,#00f2fe);
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.product-card{
+    transition: transform .3s;
+}
+
+.product-card:hover{
+    transform: scale(1.05);
+}
+
+.price{
+    font-size:20px;
+    font-weight:bold;
+    color:#28a745;
+}
+</style>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <h1 class="display-4">Welcome to Javeed E Commerce Shop 🛒</h1>
+    <p>ASP.NET Core E-Commerce Demo deployed with Azure DevOps CI/CD</p>
+    <a class="btn btn-light btn-lg mt-3">Shop Now</a>
+</div>
+
+<div class="container mt-5">
+
+<h2 class="text-center mb-4">🔥 Featured Products</h2>
+
+<div class="row">
+
+<!-- PRODUCT 1 -->
+<div class="col-md-3">
+<div class="card product-card shadow">
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" class="card-img-top">
+<div class="card-body text-center">
+<h5>Laptop Pro</h5>
+<p>High performance laptop for developers</p>
+<div class="price">$999</div>
+<button class="btn btn-primary mt-2">Add to Cart</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="col-md-3">
+<div class="card product-card shadow">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" class="card-img-top">
+<div class="card-body text-center">
+<h5>Smartphone X</h5>
+<p>Latest AI powered smartphone</p>
+<div class="price">$699</div>
+<button class="btn btn-primary mt-2">Add to Cart</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="col-md-3">
+<div class="card product-card shadow">
+<img src="https://images.unsplash.com/photo-1585386959984-a41552231658" class="card-img-top">
+<div class="card-body text-center">
+<h5>Smart Watch</h5>
+<p>Track fitness and notifications</p>
+<div class="price">$199</div>
+<button class="btn btn-primary mt-2">Add to Cart</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="col-md-3">
+<div class="card product-card shadow">
+<img src="https://images.unsplash.com/photo-1518443895914-6f8e7f8c3d9c" class="card-img-top">
+<div class="card-body text-center">
+<h5>Wireless Headphones</h5>
+<p>Noise cancelling premium sound</p>
+<div class="price">$149</div>
+<button class="btn btn-primary mt-2">Add to Cart</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+© 2026 DevOps Shop | Built with ASP.NET Core & Azure DevOps 🚀
+</footer>
